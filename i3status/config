@@ -1,0 +1,51 @@
+# i3status configuration file.
+# see "man i3status" for documentation.
+
+# It is important that this file is edited as UTF-8.
+# The following line should contain a sharp s:
+# ß
+# If the above line is not correctly displayed, fix your editor first!
+
+general {
+        colors = true
+        interval = 10
+}
+
+
+#order += "memory"
+#order += "tztime local"
+
+
+#wireless _first_ {
+#        format_up = "W: (%quality at %essid) %ip"
+#        format_down = "W: down"
+#}
+
+#memory {
+#        format = "%used | %available"
+#        threshold_degraded = "1G"
+#        format_degraded = "MEMORY < %available"
+#}
+
+#tztime local {
+#        format = "%Y-%m-%d %H:%M"
+#}
+
+
+# New version:
+# Оперативная память: текущий расход и общая ёмкость
+memory {
+    format = "RAM: %used MB / %total MB"
+    threshold_degraded = "500M"  # Задаем порог, ниже которого текст станет желтым
+    format_degraded = "RAM: LOW - %available MB"
+}
+
+# Дата и время
+tztime local {
+    format = "%Y-%m-%d | %H:%M:%S"
+}
+
+# Объединение всех блоков в строку вывода
+order += "wireless _first_"
+order += "memory"
+order += "tztime local"
