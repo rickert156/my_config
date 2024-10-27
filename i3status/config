@@ -9,6 +9,7 @@
 general {
         colors = true
         interval = 10
+	#output_format = "i3bar"
 }
 
 
@@ -22,7 +23,7 @@ memory {
 
 # Дата и время
 tztime local {
-    format = "%Y-%m-%d | %H:%M"
+    format = " %H:%M | %d-%m-%Y "
 }
 
 # Объединение всех блоков в строку вывода
