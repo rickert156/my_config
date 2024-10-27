@@ -9,8 +9,13 @@
 general {
         colors = true
         interval = 10
-	#output_format = "i3bar"
+	output_format = "i3bar"
 }
+
+# Объединение всех блоков в строку вывода
+order += "ethernet _first_"
+order += "memory"
+order += "tztime local"
 
 
 # New version:
@@ -26,6 +31,8 @@ tztime local {
     format = " %H:%M | %d-%m-%Y "
 }
 
-# Объединение всех блоков в строку вывода
-order += "memory"
-order += "tztime local"
+# Отображение информации о сети
+ethernet _first_ {
+        format_up = "E: %ip (%speed)"
+        format_down = "E: down"
+}
