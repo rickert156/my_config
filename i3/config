@@ -188,15 +188,20 @@ bindsym $mod+r mode "resize"
 bar {
 	position top
         status_command i3status
+	
 	#tray_output none
+	
+	mode hide
+
+	#workspace_buttons yes
 	
 	colors {	
     
     background #081c27
     statusline #bbbbbb
     
+		}
     }
-}
 
 # Headers
 default_border pixel
@@ -207,6 +212,9 @@ exec_always --no-startup-id picom
 #Добавление бордеров окнам
 
 #for_window [class="^.*"] border pixel 3
+
+# Урать бордер у приложения, если оно одно на экране
+#new_window none
 
 # Margin/Padding
 gaps inner 10
