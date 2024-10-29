@@ -186,22 +186,32 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
+	#padding 2px 10px 4px 1px
 	position top
         status_command i3status
 	
-	#tray_output none
+	separator_symbol ":|:"
 	
+	#tray_output none
+	#tray_padding -5 px
 	mode hide
-
+	
+	workspace_min_width 40 px
 	#workspace_buttons yes
 	
-	colors {	
+	colors {
     
     background #081c27
     statusline #bbbbbb
+
+    focused_workspace  #4c3890 #361542 #6acf42
+    active_workspace   #401557 #364291 #3b040c
+    inactive_workspace #333333 #222222 #888888
+    urgent_workspace   #2f343a #900000 #ffffff
+    binding_mode       #2f343a #900000 #ffffff
     
-		}
-    }
+	    }
+}
 
 # Headers
 default_border pixel

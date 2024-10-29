@@ -13,10 +13,10 @@ general {
 }
 
 # Объединение всех блоков в строку вывода
+order += "volume master"
 order += "ethernet _first_"
 order += "memory"
 order += "tztime local"
-
 
 # New version:
 # Оперативная память: текущий расход и общая ёмкость
@@ -36,3 +36,12 @@ ethernet _first_ {
         format_up = "E: %ip (%speed)"
         format_down = "E: down"
 }
+
+volume master {
+    format = "🎵 %volume "
+    format_muted = "  %volume"
+    device = "default"
+    mixer = "Master"
+    mixer_idx = 0
+}
+
