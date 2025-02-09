@@ -21,7 +21,7 @@ order += "tztime local"
 # New version:
 # Оперативная память: текущий расход и общая ёмкость
 memory {
-    format = "RAM: %used MB / %total MB"
+    format = "RAM: %used / %total"
     threshold_degraded = "500M"  # Задаем порог, ниже которого текст станет желтым
     format_degraded = "RAM: LOW - %available MB"
 }

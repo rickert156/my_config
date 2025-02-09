@@ -193,26 +193,25 @@ bar {
 	separator_symbol ":|:"
 	
 	#tray_output none
-	#tray_padding -5 px
+	tray_padding 1 px
 	mode hide
 	
-	workspace_min_width 40 px
+	workspace_min_width 50 px
 	#workspace_buttons yes
 	
 	colors {
     
-    background #081c27
-    statusline #bbbbbb
+	background #081c27
+	statusline #bbbbbb
 
-    focused_workspace  #4c3890 #361542 #6acf42
-    active_workspace   #401557 #364291 #3b040c
-    inactive_workspace #333333 #222222 #888888
-    urgent_workspace   #2f343a #900000 #ffffff
-    binding_mode       #2f343a #900000 #ffffff
+	focused_workspace   #ff4700 #ffba00 #ff00d2
+	active_workspace    #401557 #e69e19 #ffa500
+	inactive_workspace  #333333 #310062 #ffa500
+	urgent_workspace    #2f343a #900000 #ffffff
+	binding_mode	#2f343a #900000 #ffffff
     
-	    }
+	   }
 }
-
 # Headers
 default_border pixel
 
@@ -227,15 +226,18 @@ exec_always --no-startup-id picom
 #new_window none
 
 # Margin/Padding
-gaps inner 10
-gaps outer 5
-smart_gaps on
+gaps inner 20
+gaps outer 10
+smart_gaps off
 
 # Бинды на запуск программ
 bindsym $mod+F1 exec --no-startup-id flameshot
 bindsym $mod+F2 exec --no-startup-id simplescreenrecorder
 bindsym $mod+F3 exec --no-startup-id telegram-desktop
 bindsym $mod+F4 exec --no-startup-id firefox
+bindsym $mod+P exec --no-startup-id pavucontrol
+
+for_window [class="VirtualBox"] floating enable
 
 
 # Привязка приложений к окну(Почему-то не работает)

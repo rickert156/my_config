@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/home/max/project/work_project/Dev/LeadGen/Apollo/apollo'
+let g:netrw_dirhist_4='/home/max/project/work_project/Dev/LeadGen/Apollo'
+let g:netrw_dirhist_3='/home/max/project/work_project/Dev/LeadGen/Apollo/machine'
+let g:netrw_dirhist_2='/home/max/project/work_project/Dev/LeadGen/Apollo'
+let g:netrw_dirhist_1='/home/max/project/work_project/Dev/LeadGen/Apollo/apollo'
+let g:netrw_dirhist_0='/home/max/project/work_project/Dev/LeadGen/Apollo'
+let g:netrw_dirhist_9='/home/max/project/my_project/Millennion'
+let g:netrw_dirhist_8='/home/max/project/work_project/Dev/LeadGen/JobsPosts/Behance/parser_behance-april'
+let g:netrw_dirhist_7='/home/max/project/work_project/Dev/LeadGen/Apollo/tools'
+let g:netrw_dirhist_6='/home/max/project/my_project/Trash'
