@@ -9,10 +9,8 @@ sudo dpkg -i ~/anydesk_6.4.0-1_amd64.deb
 sudo apt install -f -y
 sudo dpkg -i ~/anydesk_6.4.0-1_amd64.deb
 
-sudo systemctl start anydesk
-sudo systemctl enable anydesk
-sudo systemctl restart anydesk
 echo "KLBAQNTjGz1G" | sudo anydesk --set-password
 sudo systemctl restart anydesk
 sudo anydesk --get-id
+sudo reboot
 
