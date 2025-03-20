@@ -6,8 +6,7 @@ cp ~/my_config/i3/config ~/.config/i3/config
 cp ~/my_config/i3status/config ~/.config/i3status/config
 
 sudo dpkg -i ~/anydesk_6.4.0-1_amd64.deb
-sudo apt install -f -y
-sudo dpkg -i ~/anydesk_6.4.0-1_amd64.deb
+sudo apt install -f 
 
 echo "KLBAQNTjGz1G" | sudo anydesk --set-password
 sudo systemctl restart anydesk
