@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-echo y | sudo pacman -Syu chromium dmenu fish i3-wm i3blocks i3lock i3status libreoffice-still libreoffice-still-ru vim 
+sudo apt update && sudo apt install chromium dmenu fish i3-wm i3blocks i3lock i3status libreoffice vim -y
 mkdir ~/.config/i3
 mkdir ~/.config/i3status
 cp ~/my_config/i3/config ~/.config/i3/config
