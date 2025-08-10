@@ -1,7 +1,7 @@
 #!/usr/bin/bash
-sudo pacman -Syu chromium dmenu fish flameshot i3-wm i3blocks i3lock i3status libreoffice-still libreoffice-still-ru mesa-utils nitrogen picom rkhunter sqlitebrowser timeshift vim yay mpv feh xreader ranger w3m picocom
+sudo pacman -Syu chromium dmenu fish flameshot i3-wm i3blocks i3lock i3status libreoffice-still libreoffice-still-ru mesa-utils nitrogen picom rkhunter sqlitebrowser timeshift vim mpv feh xreader ranger w3m picocom, yay
 
 mkdir ~/.config/i3
 mkdir ~/.config/i3status
-cp ~/my_config/i3/config ~/.config/i3/config
-cp ~/my_config/i3status/config ~/.config/i3status/config
+cp ~/my_config/i3/* ~/.config/i3/
+cp ~/my_config/i3status/* ~/.config/i3status/

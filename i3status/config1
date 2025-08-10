@@ -1,0 +1,47 @@
+# i3status configuration file.
+# see "man i3status" for documentation.
+
+# It is important that this file is edited as UTF-8.
+# The following line should contain a sharp s:
+# ß
+# If the above line is not correctly displayed, fix your editor first!
+
+general {
+        colors = true
+        interval = 10
+	output_format = "i3bar"
+}
+
+# Объединение всех блоков в строку вывода
+order += "volume master"
+order += "ethernet _first_"
+order += "memory"
+order += "tztime local"
+
+# New version:
+# Оперативная память: текущий расход и общая ёмкость
+memory {
+    format = "RAM: %used / %total"
+    threshold_degraded = "500M"  # Задаем порог, ниже которого текст станет желтым
+    format_degraded = "RAM: LOW - %available MB"
+}
+
+# Дата и время
+tztime local {
+    format = " %H:%M | %d-%m-%Y "
+}
+
+# Отображение информации о сети
+ethernet _first_ {
+        format_up = "E: %ip (%speed)"
+        format_down = "E: down"
+}
+
+volume master {
+    format = "🎵 %volume "
+    format_muted = "  %volume"
+    device = "default"
+    mixer = "Master"
+    mixer_idx = 0
+}
+
